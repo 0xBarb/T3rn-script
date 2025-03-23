@@ -48,7 +48,7 @@ chmod +x "$EXECUTOR_BINARY" || handle_error "Failed to make the binary executabl
 cd "$EXECUTOR_DIR" || handle_error "Failed to navigate to $EXECUTOR_DIR."
 
 # Request private key from the user
-echo -n "Your Private Key without 0x (paste once, it won't be feasible): "
+echo -n "Your Private Key without 0x (paste once, won't be feasible): "
 read -s PRIVATE_KEY
 echo
 if [ -z "$PRIVATE_KEY" ]; then
